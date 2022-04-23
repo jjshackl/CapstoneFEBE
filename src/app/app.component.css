@@ -1,0 +1,41 @@
+mat-sidenav-container {
+    height: 100%
+}
+
+mat-sidenav, mat-sidenav-content {
+    padding: 16px;
+}
+
+mat-sidenav {
+    width: 250px;
+}
+
+.example-sidenav {
+    user-select: none;
+}
+
+.menu-button {
+    transition: 300ms ease-in-out;
+    transform: rotate(0deg);
+    justify-content: right;
+}
+
+.menu-button.rotated {
+transform: rotate(180deg);
+}
+
+.submenu {
+overflow-y: hidden;
+transition: transform 300ms ease;
+transform: scaleY(0);
+transform-origin: top;
+padding-left: 30px;
+}
+
+.submenu.expanded {
+transform: scaleY(1);
+}
+
+.full-width {
+width: 100%;
+}
